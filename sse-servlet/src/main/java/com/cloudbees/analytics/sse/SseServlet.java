@@ -127,7 +127,7 @@ public class SseServlet extends HttpServlet {
 
     private boolean pathMatches(final String pathInfo, final String patternString) {
         final Pattern pattern = Pattern.compile(patternString);
-        return pattern.matcher(pathInfo).matches();
+        return pathInfo != null && pattern.matcher(pathInfo).matches();
     }
 
     /**

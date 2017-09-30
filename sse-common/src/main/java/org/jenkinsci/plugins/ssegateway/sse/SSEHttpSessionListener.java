@@ -1,11 +1,13 @@
 package org.jenkinsci.plugins.ssegateway.sse;
 
+import javax.servlet.annotation.WebListener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@WebListener
 public class SSEHttpSessionListener implements HttpSessionListener {
     private static final Logger LOGGER = Logger.getLogger(SSEHttpSessionListener.class.getName());
 

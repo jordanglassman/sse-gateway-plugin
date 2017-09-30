@@ -35,10 +35,8 @@ import org.jenkinsci.plugins.ssegateway.Util;
  * @author <a href="mailto:tom.fennelly@gmail.com">tom.fennelly@gmail.com</a>
  */
 public interface SSEChannel {
-
     /**
      * The event names.
-     * @see org.jenkinsci.plugins.pubsub.EventProps.Jenkins#jenkins_event
      */
     enum Event {
         subscribe,
